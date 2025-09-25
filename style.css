@@ -1,0 +1,357 @@
+/* Resetting default styles */
+*, html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #090040;
+    color: #ffff;
+}
+
+/* Navbar */
+nav {
+    background-color: #070030;
+    color: #e0e0e0;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 2rem;
+}
+
+nav div img {
+    width: 50px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 0;
+    transition: all 300ms ease;
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+    color: #FFCC00; /* Mengubah warna teks menjadi kuning */
+}
+
+nav ul li a:hover {
+    border-bottom: 1px solid black;
+    color: #FFCC00; /* Pastikan warna tetap kuning saat hover */
+}
+
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    text-align: left; /* Teks di kiri */
+    padding: 0 5%;
+}
+
+.hero .hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    /* width: 50%; Mengatur lebar teks 50% dari kontainer */
+    /* padding-right: 2rem; Memberi jarak antara teks dan gambar */
+}
+
+.hero .text {
+    width: 50%; /* Lebar teks */
+    padding-right: 2rem; /* Menambahkan jarak antara teks dan gambar */
+    padding-left: 2rem;
+}
+
+.hero .text h1 {
+    font-size: 2rem;
+}
+
+.hero .text p {
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
+
+.fotoku {
+    width: 40%; 
+    display: flex;
+    justify-content: center; 
+}   
+
+.hero .btn {
+    background-color: #FFCC00;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.hero .btn:hover {
+    background-color: #e0e0e0;
+}
+
+#gambar_hero {
+    width: 80%; 
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover; 
+}
+
+
+.github, .discord, .instagram {
+    font-size: 40px;              
+    color: white;                 
+    transition: transform 0.3s ease, color 0.3s ease; 
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+    padding-top: 1rem;
+}
+
+.github:hover, .discord:hover, .instagram:hover {
+    color: #FFCC00;               
+    transform: scale(1.2);         
+}
+
+
+/* About Section */
+.about {
+            padding: 80px 5%;
+            background-color: #090040;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .about-container {
+            max-width: 1200px;
+            display: flex;
+            align-items: center;
+            gap: 4rem;
+            flex-wrap: wrap;
+        }
+
+        .about-content {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .about-content h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #FFCC00;
+            text-align: left;
+        }
+
+        .about-content .subtitle {
+            font-size: 1.2rem;
+            color: #ccc;
+            margin-bottom: 2rem;
+            font-weight: 300;
+        }
+
+        .about-content .description {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #e0e0e0;
+            margin-bottom: 2rem;
+            text-align: justify;
+        }
+
+        .about-skills {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .skill-tag {
+            background: rgba(255, 204, 0, 0.1);
+            color: #FFCC00;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            border: 1px solid rgba(255, 204, 0, 0.3);
+        }
+
+        .about-image {
+            flex: 0 0 300px;
+            text-align: center;
+        }
+
+        .about-photo {
+            width: 250px;
+            height: 250px;
+            border-radius: 20px;
+            object-fit: cover;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .about-photo:hover {
+            transform: translateY(-10px);
+        }
+
+
+
+/* Projects Section */
+.projects {
+            background-color: #090040;
+            padding: 80px 5%;
+            text-align: center;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .projects h2 {
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+            color: #FFCC00;
+        }
+
+        .projects-grid {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .project-card {
+            width: 350px;
+            background: #070030;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .project-card-content {
+            padding: 1.5rem;
+        }
+
+        .project-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #FFCC00;
+        }
+
+        .project-card p {
+            color: #ccc;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+
+        .project-card a {
+            display: inline-block;
+            background: #FFCC00;
+            color: #070030;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .project-card a:hover {
+            background: #e6b800;
+            transform: scale(1.05);
+        }
+
+/* Contact Section */
+.contact {
+            padding: 80px 5%;
+            text-align: center;
+            background-color: #090040;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .contact h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #ffd700;
+        }
+
+        .contact p {
+            margin-bottom: 3rem;
+            color: #ccc;
+            font-size: 1.1rem;
+        }
+
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .contact input, .contact textarea {
+            width: 100%;
+            padding: 15px;
+            font-size: 1rem;
+            border: 2px solid rgba(255, 215, 0, 0.3);
+            border-radius: 10px;
+            background: rgba(255, 215, 0, 0.1);
+            color: #ffd700;
+        }
+
+        .contact input:focus, .contact textarea:focus {
+            outline: none;
+            border-color: #ffd700;
+        }
+
+        .contact button {
+            background: #ffd700;
+            color: #0f0d40;
+            padding: 15px 30px;
+            font-weight: 600;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .contact button:hover {
+            background: #e6c200;
+            transform: scale(1.05);
+        }
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #070030;
+    color: white;
+}

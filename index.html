@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div>
+            <img src="logo.png" alt="Logo">
+        </div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+   <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="text">
+                <h1>Hello, my name is Cleon</h1>
+                <p>I'm a passionate Computer Science Student, Editor, Gamer, Streamer</p>
+                <a href="#about" class="btn">Learn More</a>
+                
+                <!-- Social Media Icons - Now Clickable -->
+                <div class="social-icons">
+                    <a href="https://github.com/Cleonixx" target="_blank" class="github" title="Visit my GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://discord.gg/uvexz6fM" target="_blank" class="discord" title="Join my Discord">
+                        <i class="fa-brands fa-discord"></i>
+                    </a>
+                    <a href="https://www.instagram.com/c1.eon/" target="_blank" class="instagram" title="Follow me on Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="fotoku">
+                <img src="hero.jpg" alt="Cleon's Photo" id="gambar_hero">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-container">
+            <div class="about-content">
+                <h1>About Me</h1>
+                <p class="subtitle">Computer Science Student & Tech Enthusiast</p>
+                <p class="description">
+                    Nama saya Cleon Bramantya Juang Anarkhi, mahasiswa Teknologi Informasi Universitas Negeri Jember asal Jember. 
+                    Saya memiliki ketertarikan yang mendalam pada bidang data science dan terus berusaha mengasah keterampilan 
+                    dalam analisis data serta machine learning. Dengan semangat belajar yang tinggi, saya selalu mencari cara 
+                    untuk mengaplikasikan teknologi dalam memecahkan masalah nyata.
+                </p>
+                <div class="about-skills">
+                    <span class="skill-tag">Data Science</span>
+                    <span class="skill-tag">Machine Learning</span>
+                    <span class="skill-tag">Web Development</span>
+                    <span class="skill-tag">Video Editing</span>
+                    <span class="skill-tag">Gaming</span>
+                </div>
+            </div>
+            <div class="about-image">
+                <img src="hero.jpg" alt="My Photo" class="about-photo">
+            </div>
+        </div>
+    </section>
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="agromart.png" alt="Project 1">
+                <div class="project-card-content">
+                    <h3>Agromart</h3>
+                    <p>AgroMart merupakan aplikasi E-commerce yang dirancang untuk mempertemukan petani dan konsumen secara langsung tanpa perantara, sehingga petani dapat memasarkan hasil pertanian dengan mudah secara langsung ke konsumen dan konsumen dapat membeli hasil yang lebih murah dan berkualitas.</p>
+                    <a href="https://github.com/Grimpascal/Agro-Projek" target="_blank">View on GitHub</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="klinik.png" alt="Project 2">
+                <div class="project-card-content">
+                    <h3>Klinik Gigi Bersama</h3>
+                    <p>Aplikasi klinik gigi bersama adalah sebuah sistem perangkat lunak yang dirancang untuk membantu pengelolaan layanan di klinik gigi.</p>
+                    <a href="https://github.com/Grimpascal/BASDA" target="_blank">View on GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <p>If you'd like to get in touch, feel free to send a message!</p>
+        <form action="#">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 My Port0folio. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
